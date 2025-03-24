@@ -11,6 +11,8 @@ import BudgetCard from '../../components/budgets/BudgetCard';
 import BudgetForm from '../../components/budgets/BudgetForm';
 import { getAllBudgets, getBudgetsByPeriod, createBudget, updateBudget, deleteBudget } from '../../api/budgetApi';
 import { getAllCategories } from '../../api/categoryApi';
+import TextField from '@mui/material/TextField';
+
 
 const BudgetsList = () => {
   const [budgets, setBudgets] = useState([]);

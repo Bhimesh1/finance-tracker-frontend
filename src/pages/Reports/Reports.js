@@ -13,6 +13,9 @@ import DownloadIcon from '@mui/icons-material/Download';
 import { format, startOfMonth, endOfMonth, subMonths, addMonths } from 'date-fns';
 import { getExpensesByCategory, getCashFlowForMonth, getMonthlySummary, getAccountBalanceHistory } from '../../api/analyticsApi';
 import { getAllAccounts } from '../../api/accountApi';
+import { Cell } from 'recharts';
+
+
 
 const Reports = () => {
   const [tabValue, setTabValue] = useState(0);
